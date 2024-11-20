@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Simple CRUD App</title>
+</head>
+<body>
+    <h1>Item List</h1>
+    <a href="/add">Add Item</a>
+    <ul>
+        {% for item in items %}
+            <li>
+                {{ item }}
+                <a href="/update/{{ loop.index0 }}">Update</a>
+                <form action="/delete/{{ loop.index0 }}" method="post" style="display:inline;">
+                    <button type="submit">Delete</button>
+                </form>
+            </li>
+        {% endfor %}
+    </ul>
+</body>
+</html>
+
