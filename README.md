@@ -13,4 +13,4 @@ This project shows how to deploy existing flask web application on Ec2 instance
 3. Open the port 5000 using security groups
    + Create new security group and add port 5000 in the inbound rules of security group  
 7. Access the Application
-   + http://<public_ip>:50000
+   + http://<public_ip>:5000
